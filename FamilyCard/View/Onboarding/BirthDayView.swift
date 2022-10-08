@@ -16,14 +16,8 @@ struct BirthDayView: View {
     @Binding var gender: String
     @Binding var name: String
     @FocusState var focusedField: FocusField?
-    @State private var date = Date()
-    @State var selected: Int = 0
-    
-    var dateFormatter: DateFormatter {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy.MM.dd"
-        return formatter
-    }
+    @Binding var date: Date
+    @Binding var selected: Int
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -49,7 +43,7 @@ struct BirthDayView: View {
                     .background(Color.gray)
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 40, trailing: 0))
             } else {
-                Text("\(date, formatter: dateFormatter)")
+                Text("\(date, formatter: DateFormatter.customFormatter)")
                     .foregroundColor(.black)
                 Divider()
                     .frame(height: 1)
@@ -61,17 +55,16 @@ struct BirthDayView: View {
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 40, trailing: 0))
             TitleDetailView(title: "이름", detail: name)
                
-
             Spacer()
         }
         .padding(.horizontal, 30)
         if selected > 0 {
             VStack {
-                ConfirmView(text: "다음")
-                    .onTapGesture {
-                        print("다음")
-                        page += 1
-                    }
+                Button(action: {
+                    page += 1
+                }, label: {
+                    ConfirmView(text: "다음")
+                })
             }
         }
         
@@ -93,6 +86,6 @@ struct BirthDayView: View {
 
 struct BirthDayView_Previews: PreviewProvider {
     static var previews: some View {
-        BirthDayView(page: .constant(3), gender: .constant("남자"), name: .constant("린다"))
+        BirthDayView(page: .constant(3), gender: .constant("남자"), name: .constant("린다"), date: .constant(Date()), selected: .constant(1))
     }
 }

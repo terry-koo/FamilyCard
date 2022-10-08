@@ -24,6 +24,7 @@
 		39D76F8528F18D5C0075AB21 /* BirthDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8428F18D5C0075AB21 /* BirthDayView.swift */; };
 		39D76F8828F1C1820075AB21 /* TitleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8728F1C1820075AB21 /* TitleDetailView.swift */; };
 		39D76F8A28F1C7EF0075AB21 /* BloodTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */; };
+		39E4F93228F1DD2A00AC0FBA /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F93128F1DD2A00AC0FBA /* DateFormatterExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		39D76F8628F1A2570075AB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		39D76F8728F1C1820075AB21 /* TitleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailView.swift; sourceTree = "<group>"; };
 		39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodTypeView.swift; sourceTree = "<group>"; };
+		39E4F93128F1DD2A00AC0FBA /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +117,8 @@
 		39D76F7228F17B130075AB21 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				39D76F7F28F17C7A0075AB21 /* Module */,
 				39D76F7028F1799A0075AB21 /* MainView.swift */,
+				39D76F7F28F17C7A0075AB21 /* Module */,
 				3916859928F164EE006101E6 /* Onboarding */,
 			);
 			path = View;
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				39D76F7928F17B510075AB21 /* TestExtenstion.swift */,
+				39E4F93128F1DD2A00AC0FBA /* DateFormatterExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				3916858928F16019006101E6 /* ContentView.swift in Sources */,
 				3916859B28F1679C006101E6 /* NameView.swift in Sources */,
 				39D76F8328F18B170075AB21 /* ConfirmView.swift in Sources */,
+				39E4F93228F1DD2A00AC0FBA /* DateFormatterExtension.swift in Sources */,
 				39D76F7128F1799A0075AB21 /* MainView.swift in Sources */,
 				3916858728F16019006101E6 /* FamilyCardApp.swift in Sources */,
 				39D76F6F28F177970075AB21 /* GenderView.swift in Sources */,

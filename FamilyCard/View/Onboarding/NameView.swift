@@ -28,14 +28,15 @@ struct NameView: View {
                     .onAppear {
                         self.focusedField = .field
                     }
-                if !name.isEmpty {
+//                if !name.isEmpty {
                     Button(action: {
                         name = ""
                     }, label: {
                         Image(systemName: "x.circle.fill")
                             .foregroundColor(.gray)
+                            .opacity(name.isEmpty ? 0 : 1)
                     })
-                }
+//                }
             }
             Divider()
                 .frame(height: 1)

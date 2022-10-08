@@ -11,6 +11,10 @@ struct MainView: View {
     @State var page: Int = 0
     @State var name: String = ""
     @State var gender: String = ""
+    @State var blood: String = ""
+    @State var rh: String = ""
+    @State var date = Date()
+    @State var selected: Int = 0
     
     var body: some View {
         VStack {
@@ -25,6 +29,7 @@ struct MainView: View {
                             return  
                         }
                     }
+                    .opacity(page > 0 ? 1 : 0)
                 Spacer()
             }
             switch page {
@@ -33,7 +38,9 @@ struct MainView: View {
             case 1:
                 GenderView(page: $page,name: $name, gender: $gender)
             case 2:
-                BirthDayView(page: $page, gender: $gender, name: $name)
+                BirthDayView(page: $page, gender: $gender, name: $name, date: $date, selected: $selected)
+            case 3:
+                BloodTypeView(page: $page, gender: $gender, name: $name, blood: $blood, rh: $rh, date: $date)
             default:
                 EmptyView()
             }

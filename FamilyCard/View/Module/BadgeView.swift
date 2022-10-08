@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct BadgeView: View {
-    var text: String 
+    var text: String
+    var width: CGFloat
+    var height: CGFloat
     @Binding var bindingGender: String
     
 //    init(text: String, state: Binding<Bool>, bind){
@@ -20,7 +22,7 @@ struct BadgeView: View {
         if text == bindingGender {
             ZStack {
                 RoundedRectangle(cornerRadius: 30)
-                    .frame(width: 88, height: 46)
+                    .frame(width: width, height: height)
                     .foregroundColor(.blue)
                 Text(text)
                     .foregroundColor(.white)
@@ -28,7 +30,7 @@ struct BadgeView: View {
         } else {
             ZStack {
                 RoundedRectangle(cornerRadius: 30)
-                    .frame(width: 88, height: 46)
+                    .frame(width: width, height: height)
                     .foregroundColor(.gray)
                 Text(text)
                     .foregroundColor(.white)

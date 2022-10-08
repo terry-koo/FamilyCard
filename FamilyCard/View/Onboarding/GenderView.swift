@@ -23,11 +23,11 @@ struct GenderView: View {
                 .font(.system(size: 28))
                 .padding(.vertical, 40)
             HStack {
-                BadgeView(text: "남성", bindingGender: $gender)
+                BadgeView(text: "남성",width: 88, height: 46, bindingGender: $gender)
                     .onTapGesture {
                         gender = "남성"
                     }
-                BadgeView(text: "여성", bindingGender: $gender)
+                BadgeView(text: "여성",width: 88, height: 46, bindingGender: $gender)
                     .onTapGesture {
                         gender = "여성"
                     }
@@ -54,11 +54,11 @@ struct GenderView: View {
             // 버튼
             if !gender.isEmpty && focusedField != .field {
                 VStack {
-                    ConfirmView(text: "다음")
-                        .onTapGesture {
-                            print("다음")
-                            page += 1
-                        }
+                    Button(action: {
+                        page += 1
+                    }, label: {
+                        ConfirmView(text: "다음")
+                    })
                 }
             }
         }
