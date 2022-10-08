@@ -19,6 +19,8 @@
 		39D76F7A28F17B510075AB21 /* TestExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7928F17B510075AB21 /* TestExtenstion.swift */; };
 		39D76F7C28F17B560075AB21 /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7B28F17B560075AB21 /* TestManager.swift */; };
 		39D76F7E28F17B5C0075AB21 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7D28F17B5C0075AB21 /* TestModel.swift */; };
+		39D76F8128F17CA90075AB21 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8028F17CA90075AB21 /* BadgeView.swift */; };
+		39D76F8328F18B170075AB21 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8228F18B170075AB21 /* ConfirmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		39D76F7928F17B510075AB21 /* TestExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtenstion.swift; sourceTree = "<group>"; };
 		39D76F7B28F17B560075AB21 /* TestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
 		39D76F7D28F17B5C0075AB21 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		39D76F8028F17CA90075AB21 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		39D76F8228F18B170075AB21 /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		39D76F7228F17B130075AB21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				39D76F7F28F17C7A0075AB21 /* Module */,
 				39D76F7028F1799A0075AB21 /* MainView.swift */,
 				3916859928F164EE006101E6 /* Onboarding */,
 			);
@@ -129,6 +134,15 @@
 				39D76F7928F17B510075AB21 /* TestExtenstion.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		39D76F7F28F17C7A0075AB21 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F8028F17CA90075AB21 /* BadgeView.swift */,
+				39D76F8228F18B170075AB21 /* ConfirmView.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,10 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D76F8128F17CA90075AB21 /* BadgeView.swift in Sources */,
 				39D76F7A28F17B510075AB21 /* TestExtenstion.swift in Sources */,
 				3916859028F1601B006101E6 /* Persistence.swift in Sources */,
 				3916858928F16019006101E6 /* ContentView.swift in Sources */,
 				3916859B28F1679C006101E6 /* NameView.swift in Sources */,
+				39D76F8328F18B170075AB21 /* ConfirmView.swift in Sources */,
 				39D76F7128F1799A0075AB21 /* MainView.swift in Sources */,
 				3916858728F16019006101E6 /* FamilyCardApp.swift in Sources */,
 				39D76F6F28F177970075AB21 /* GenderView.swift in Sources */,

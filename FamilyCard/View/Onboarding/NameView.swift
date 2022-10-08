@@ -11,9 +11,10 @@ struct NameView: View {
     enum FocusField: Hashable {
       case field
     }
+    
     @Binding var page: Int
-    @State private var username: String = ""
-    @FocusState private var focusedField: FocusField?
+    @Binding var username: String
+    @FocusState var focusedField: FocusField?
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -60,8 +61,8 @@ struct NameView: View {
     }
 }
 
-struct NameView_Previews: PreviewProvider {
-    static var previews: some View {
-        NameView(page: .constant(1)) 
-    }
-}
+//struct NameView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NameView(page: .constant(1)) 
+//    }
+//}
