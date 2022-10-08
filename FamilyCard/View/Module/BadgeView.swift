@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BadgeView: View {
-    var text: String
+    var text: String 
     @Binding var bindingGender: String
     
 //    init(text: String, state: Binding<Bool>, bind){
