@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GenderView: View {
+    @Binding var page: Int
     @State var username: String = "린다"
     var body: some View {
         VStack(alignment: .leading) {
@@ -26,6 +27,6 @@ struct GenderView: View {
 
 struct GenderView_Previews: PreviewProvider {
     static var previews: some View {
-        GenderView()
+        GenderView(page: .constant(1))
     }
 }

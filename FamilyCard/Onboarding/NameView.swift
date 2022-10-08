@@ -11,6 +11,7 @@ struct NameView: View {
     enum FocusField: Hashable {
       case field
     }
+    @Binding var page: Int
     @State private var username: String = ""
     @FocusState private var focusedField: FocusField?
     
@@ -46,7 +47,7 @@ struct NameView: View {
         VStack {
             if focusedField == .field && !username.isEmpty {
                 Button(action: {
-                    print("button")
+                    page += 1
                 }, label: {
                     Text("다음")
                         .padding(10)
@@ -61,6 +62,6 @@ struct NameView: View {
 
 struct NameView_Previews: PreviewProvider {
     static var previews: some View {
-        NameView() 
+        NameView(page: .constant(1)) 
     }
 }

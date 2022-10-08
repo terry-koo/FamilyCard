@@ -15,6 +15,7 @@
 		3916859328F1601B006101E6 /* FamilyCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3916859128F1601B006101E6 /* FamilyCard.xcdatamodeld */; };
 		3916859B28F1679C006101E6 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3916859A28F1679C006101E6 /* NameView.swift */; };
 		39D76F6F28F177970075AB21 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F6E28F177970075AB21 /* GenderView.swift */; };
+		39D76F7128F1799A0075AB21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7028F1799A0075AB21 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		3916859228F1601B006101E6 /* FamilyCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FamilyCard.xcdatamodel; sourceTree = "<group>"; };
 		3916859A28F1679C006101E6 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		39D76F6E28F177970075AB21 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		39D76F7028F1799A0075AB21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3916858F28F1601B006101E6 /* Persistence.swift */,
 				3916859128F1601B006101E6 /* FamilyCard.xcdatamodeld */,
 				3916858C28F1601B006101E6 /* Preview Content */,
+				39D76F7028F1799A0075AB21 /* MainView.swift */,
 			);
 			path = FamilyCard;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				3916859028F1601B006101E6 /* Persistence.swift in Sources */,
 				3916858928F16019006101E6 /* ContentView.swift in Sources */,
 				3916859B28F1679C006101E6 /* NameView.swift in Sources */,
+				39D76F7128F1799A0075AB21 /* MainView.swift in Sources */,
 				3916858728F16019006101E6 /* FamilyCardApp.swift in Sources */,
 				39D76F6F28F177970075AB21 /* GenderView.swift in Sources */,
 				3916859328F1601B006101E6 /* FamilyCard.xcdatamodeld in Sources */,
