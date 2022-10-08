@@ -13,7 +13,7 @@ struct NameView: View {
     }
     
     @Binding var page: Int
-    @Binding var username: String
+    @Binding var name: String
     @FocusState var focusedField: FocusField?
     
     var body: some View {
@@ -22,15 +22,15 @@ struct NameView: View {
                 .font(.system(size: 28))
                 .padding(.vertical, 40)
             HStack {
-                TextField("이름", text: $username)
+                TextField("이름", text: $name)
                     .focused($focusedField, equals: .field)
                     .keyboardType(.twitter)
                     .onAppear {
                         self.focusedField = .field
                     }
-                if !username.isEmpty {
+                if !name.isEmpty {
                     Button(action: {
-                        username = ""
+                        name = ""
                     }, label: {
                         Image(systemName: "x.circle.fill")
                             .foregroundColor(.gray)
@@ -46,7 +46,7 @@ struct NameView: View {
         
         // 다음 버튼
         VStack {
-            if focusedField == .field && !username.isEmpty {
+            if focusedField == .field && !name.isEmpty {
                 Button(action: {
                     page += 1
                 }, label: {

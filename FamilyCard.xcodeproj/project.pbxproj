@@ -22,6 +22,8 @@
 		39D76F8128F17CA90075AB21 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8028F17CA90075AB21 /* BadgeView.swift */; };
 		39D76F8328F18B170075AB21 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8228F18B170075AB21 /* ConfirmView.swift */; };
 		39D76F8528F18D5C0075AB21 /* BirthDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8428F18D5C0075AB21 /* BirthDayView.swift */; };
+		39D76F8828F1C1820075AB21 /* TitleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8728F1C1820075AB21 /* TitleDetailView.swift */; };
+		39D76F8A28F1C7EF0075AB21 /* BloodTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,9 @@
 		39D76F8028F17CA90075AB21 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		39D76F8228F18B170075AB21 /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 		39D76F8428F18D5C0075AB21 /* BirthDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDayView.swift; sourceTree = "<group>"; };
+		39D76F8628F1A2570075AB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		39D76F8728F1C1820075AB21 /* TitleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailView.swift; sourceTree = "<group>"; };
+		39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodTypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,7 @@
 		3916858528F16019006101E6 /* FamilyCard */ = {
 			isa = PBXGroup;
 			children = (
+				39D76F8628F1A2570075AB21 /* Info.plist */,
 				39D76F7528F17B290075AB21 /* Extension */,
 				39D76F7428F17B1E0075AB21 /* Manager */,
 				39D76F7328F17B190075AB21 /* Model */,
@@ -101,6 +107,7 @@
 				3916859A28F1679C006101E6 /* NameView.swift */,
 				39D76F6E28F177970075AB21 /* GenderView.swift */,
 				39D76F8428F18D5C0075AB21 /* BirthDayView.swift */,
+				39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -144,6 +151,7 @@
 			children = (
 				39D76F8028F17CA90075AB21 /* BadgeView.swift */,
 				39D76F8228F18B170075AB21 /* ConfirmView.swift */,
+				39D76F8728F1C1820075AB21 /* TitleDetailView.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 3916857A28F16019006101E6;
 			productRefGroup = 3916858428F16019006101E6 /* Products */;
@@ -228,9 +237,11 @@
 				3916858728F16019006101E6 /* FamilyCardApp.swift in Sources */,
 				39D76F6F28F177970075AB21 /* GenderView.swift in Sources */,
 				39D76F8528F18D5C0075AB21 /* BirthDayView.swift in Sources */,
+				39D76F8828F1C1820075AB21 /* TitleDetailView.swift in Sources */,
 				39D76F7E28F17B5C0075AB21 /* TestModel.swift in Sources */,
 				39D76F7C28F17B560075AB21 /* TestManager.swift in Sources */,
 				3916859328F1601B006101E6 /* FamilyCard.xcdatamodeld in Sources */,
+				39D76F8A28F1C7EF0075AB21 /* BloodTypeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +373,7 @@
 				DEVELOPMENT_TEAM = PQ5FS4VVLR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FamilyCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -391,6 +403,7 @@
 				DEVELOPMENT_TEAM = PQ5FS4VVLR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FamilyCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

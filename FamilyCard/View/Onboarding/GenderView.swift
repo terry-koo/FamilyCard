@@ -13,7 +13,7 @@ struct GenderView: View {
     }
     
     @Binding var page: Int
-    @Binding var username: String
+    @Binding var name: String
     @Binding var gender: String
     @FocusState var focusedField: FocusField?
     
@@ -34,7 +34,7 @@ struct GenderView: View {
             }
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
             Text("이름")
-            TextField("이름", text: $username)
+            TextField("이름", text: $name)
                 .focused($focusedField, equals: .field)
             if focusedField == .field {
                 Divider()
