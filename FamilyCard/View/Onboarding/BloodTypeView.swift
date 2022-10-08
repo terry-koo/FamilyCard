@@ -14,6 +14,7 @@ struct BloodTypeView: View {
     @Binding var blood: String
     @Binding var rh: String
     @Binding var date: Date
+    @Binding var isFirstLaunching: Bool
     @State var sheet: Bool = false
     
     var body: some View {
@@ -109,7 +110,7 @@ struct BloodTypeView: View {
                 }
             }
             .padding(20)
-            .presentationDetents([.fraction(0.3)])
+            .presentationDetents([.medium])
         })
         
         ZStack {
@@ -119,6 +120,7 @@ struct BloodTypeView: View {
                 VStack {
                     Button(action: {
                         page += 1
+                        isFirstLaunching.toggle()
                     }, label: {
                         ConfirmView(text: "완료")
                     })
@@ -130,6 +132,6 @@ struct BloodTypeView: View {
 
 struct BloodTypeView_Previews: PreviewProvider {
     static var previews: some View {
-        BloodTypeView(page: .constant(3), gender: .constant("남성"), name: .constant("륑다"), blood: .constant("A형"), rh: .constant("RH+"), date: .constant(Date()))
+        BloodTypeView(page: .constant(3), gender: .constant("남성"), name: .constant("륑다"), blood: .constant("A형"), rh: .constant("RH+"), date: .constant(Date()), isFirstLaunching: .constant(true))
     }
 }

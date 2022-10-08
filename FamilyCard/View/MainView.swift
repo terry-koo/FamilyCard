@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
+    
     @State var page: Int = 0
     @State var name: String = ""
     @State var gender: String = ""
@@ -32,17 +34,19 @@ struct MainView: View {
                     .opacity(page > 0 ? 1 : 0)
                 Spacer()
             }
-            switch page {
-            case 0:
-                NameView(page: $page, name: $name)
-            case 1:
-                GenderView(page: $page,name: $name, gender: $gender)
-            case 2:
-                BirthDayView(page: $page, gender: $gender, name: $name, date: $date, selected: $selected)
-            case 3:
-                BloodTypeView(page: $page, gender: $gender, name: $name, blood: $blood, rh: $rh, date: $date)
-            default:
-                EmptyView()
+            if isFirstLaunching == true {
+                switch page {
+                case 0:
+                    NameView(page: $page, name: $name)
+                case 1:
+                    GenderView(page: $page,name: $name, gender: $gender)
+                case 2:
+                    BirthDayView(page: $page, gender: $gender, name: $name, date: $date, selected: $selected)
+                case 3:
+                    BloodTypeView(page: $page, gender: $gender, name: $name, blood: $blood, rh: $rh, date: $date, isFirstLaunching: $isFirstLaunching)
+                default:
+                    EmptyView()
+                }
             }
         }
     }
