@@ -16,6 +16,9 @@
 		3916859B28F1679C006101E6 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3916859A28F1679C006101E6 /* NameView.swift */; };
 		39D76F6F28F177970075AB21 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F6E28F177970075AB21 /* GenderView.swift */; };
 		39D76F7128F1799A0075AB21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7028F1799A0075AB21 /* MainView.swift */; };
+		39D76F7A28F17B510075AB21 /* TestExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7928F17B510075AB21 /* TestExtenstion.swift */; };
+		39D76F7C28F17B560075AB21 /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7B28F17B560075AB21 /* TestManager.swift */; };
+		39D76F7E28F17B5C0075AB21 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7D28F17B5C0075AB21 /* TestModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		3916859A28F1679C006101E6 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		39D76F6E28F177970075AB21 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
 		39D76F7028F1799A0075AB21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		39D76F7928F17B510075AB21 /* TestExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtenstion.swift; sourceTree = "<group>"; };
+		39D76F7B28F17B560075AB21 /* TestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
+		39D76F7D28F17B5C0075AB21 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +67,16 @@
 		3916858528F16019006101E6 /* FamilyCard */ = {
 			isa = PBXGroup;
 			children = (
-				3916859928F164EE006101E6 /* Onboarding */,
+				39D76F7528F17B290075AB21 /* Extension */,
+				39D76F7428F17B1E0075AB21 /* Manager */,
+				39D76F7328F17B190075AB21 /* Model */,
+				39D76F7228F17B130075AB21 /* View */,
 				3916858628F16019006101E6 /* FamilyCardApp.swift */,
 				3916858828F16019006101E6 /* ContentView.swift */,
 				3916858A28F1601B006101E6 /* Assets.xcassets */,
 				3916858F28F1601B006101E6 /* Persistence.swift */,
 				3916859128F1601B006101E6 /* FamilyCard.xcdatamodeld */,
 				3916858C28F1601B006101E6 /* Preview Content */,
-				39D76F7028F1799A0075AB21 /* MainView.swift */,
 			);
 			path = FamilyCard;
 			sourceTree = "<group>";
@@ -88,6 +96,39 @@
 				39D76F6E28F177970075AB21 /* GenderView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		39D76F7228F17B130075AB21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F7028F1799A0075AB21 /* MainView.swift */,
+				3916859928F164EE006101E6 /* Onboarding */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39D76F7328F17B190075AB21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F7D28F17B5C0075AB21 /* TestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39D76F7428F17B1E0075AB21 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F7B28F17B560075AB21 /* TestManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		39D76F7528F17B290075AB21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F7928F17B510075AB21 /* TestExtenstion.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,12 +201,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D76F7A28F17B510075AB21 /* TestExtenstion.swift in Sources */,
 				3916859028F1601B006101E6 /* Persistence.swift in Sources */,
 				3916858928F16019006101E6 /* ContentView.swift in Sources */,
 				3916859B28F1679C006101E6 /* NameView.swift in Sources */,
 				39D76F7128F1799A0075AB21 /* MainView.swift in Sources */,
 				3916858728F16019006101E6 /* FamilyCardApp.swift in Sources */,
 				39D76F6F28F177970075AB21 /* GenderView.swift in Sources */,
+				39D76F7E28F17B5C0075AB21 /* TestModel.swift in Sources */,
+				39D76F7C28F17B560075AB21 /* TestManager.swift in Sources */,
 				3916859328F1601B006101E6 /* FamilyCard.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

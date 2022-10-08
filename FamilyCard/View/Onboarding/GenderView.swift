@@ -23,7 +23,7 @@ struct GenderView: View {
         }
         .padding(.horizontal, 30)
     }
-}
+} 
 
 struct GenderView_Previews: PreviewProvider {
     static var previews: some View {
