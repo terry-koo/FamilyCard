@@ -16,6 +16,7 @@ struct FamilyCardApp: App {
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
             MainView()
+//            MyPageView()
         }
     }
 }
