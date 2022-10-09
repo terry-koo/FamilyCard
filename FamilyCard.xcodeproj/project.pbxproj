@@ -13,6 +13,18 @@
 		3916858E28F1601B006101E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3916858D28F1601B006101E6 /* Preview Assets.xcassets */; };
 		3916859028F1601B006101E6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3916858F28F1601B006101E6 /* Persistence.swift */; };
 		3916859328F1601B006101E6 /* FamilyCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3916859128F1601B006101E6 /* FamilyCard.xcdatamodeld */; };
+		3916859B28F1679C006101E6 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3916859A28F1679C006101E6 /* NameView.swift */; };
+		39D76F6F28F177970075AB21 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F6E28F177970075AB21 /* GenderView.swift */; };
+		39D76F7128F1799A0075AB21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7028F1799A0075AB21 /* MainView.swift */; };
+		39D76F7A28F17B510075AB21 /* TestExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7928F17B510075AB21 /* TestExtenstion.swift */; };
+		39D76F7C28F17B560075AB21 /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7B28F17B560075AB21 /* TestManager.swift */; };
+		39D76F7E28F17B5C0075AB21 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7D28F17B5C0075AB21 /* TestModel.swift */; };
+		39D76F8128F17CA90075AB21 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8028F17CA90075AB21 /* BadgeView.swift */; };
+		39D76F8328F18B170075AB21 /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8228F18B170075AB21 /* ConfirmView.swift */; };
+		39D76F8528F18D5C0075AB21 /* BirthDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8428F18D5C0075AB21 /* BirthDayView.swift */; };
+		39D76F8828F1C1820075AB21 /* TitleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8728F1C1820075AB21 /* TitleDetailView.swift */; };
+		39D76F8A28F1C7EF0075AB21 /* BloodTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */; };
+		39E4F93228F1DD2A00AC0FBA /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F93128F1DD2A00AC0FBA /* DateFormatterExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +35,19 @@
 		3916858D28F1601B006101E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3916858F28F1601B006101E6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3916859228F1601B006101E6 /* FamilyCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FamilyCard.xcdatamodel; sourceTree = "<group>"; };
+		3916859A28F1679C006101E6 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		39D76F6E28F177970075AB21 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
+		39D76F7028F1799A0075AB21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		39D76F7928F17B510075AB21 /* TestExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtenstion.swift; sourceTree = "<group>"; };
+		39D76F7B28F17B560075AB21 /* TestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
+		39D76F7D28F17B5C0075AB21 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		39D76F8028F17CA90075AB21 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		39D76F8228F18B170075AB21 /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
+		39D76F8428F18D5C0075AB21 /* BirthDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDayView.swift; sourceTree = "<group>"; };
+		39D76F8628F1A2570075AB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		39D76F8728F1C1820075AB21 /* TitleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailView.swift; sourceTree = "<group>"; };
+		39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodTypeView.swift; sourceTree = "<group>"; };
+		39E4F93128F1DD2A00AC0FBA /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +80,11 @@
 		3916858528F16019006101E6 /* FamilyCard */ = {
 			isa = PBXGroup;
 			children = (
+				39D76F8628F1A2570075AB21 /* Info.plist */,
+				39D76F7528F17B290075AB21 /* Extension */,
+				39D76F7428F17B1E0075AB21 /* Manager */,
+				39D76F7328F17B190075AB21 /* Model */,
+				39D76F7228F17B130075AB21 /* View */,
 				3916858628F16019006101E6 /* FamilyCardApp.swift */,
 				3916858828F16019006101E6 /* ContentView.swift */,
 				3916858A28F1601B006101E6 /* Assets.xcassets */,
@@ -71,6 +101,62 @@
 				3916858D28F1601B006101E6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3916859928F164EE006101E6 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3916859A28F1679C006101E6 /* NameView.swift */,
+				39D76F6E28F177970075AB21 /* GenderView.swift */,
+				39D76F8428F18D5C0075AB21 /* BirthDayView.swift */,
+				39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		39D76F7228F17B130075AB21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F7028F1799A0075AB21 /* MainView.swift */,
+				39D76F7F28F17C7A0075AB21 /* Module */,
+				3916859928F164EE006101E6 /* Onboarding */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39D76F7328F17B190075AB21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F7D28F17B5C0075AB21 /* TestModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39D76F7428F17B1E0075AB21 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F7B28F17B560075AB21 /* TestManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		39D76F7528F17B290075AB21 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F7928F17B510075AB21 /* TestExtenstion.swift */,
+				39E4F93128F1DD2A00AC0FBA /* DateFormatterExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		39D76F7F28F17C7A0075AB21 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				39D76F8028F17CA90075AB21 /* BadgeView.swift */,
+				39D76F8228F18B170075AB21 /* ConfirmView.swift */,
+				39D76F8728F1C1820075AB21 /* TitleDetailView.swift */,
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +201,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 3916857A28F16019006101E6;
 			productRefGroup = 3916858428F16019006101E6 /* Products */;
@@ -143,10 +230,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D76F8128F17CA90075AB21 /* BadgeView.swift in Sources */,
+				39D76F7A28F17B510075AB21 /* TestExtenstion.swift in Sources */,
 				3916859028F1601B006101E6 /* Persistence.swift in Sources */,
 				3916858928F16019006101E6 /* ContentView.swift in Sources */,
+				3916859B28F1679C006101E6 /* NameView.swift in Sources */,
+				39D76F8328F18B170075AB21 /* ConfirmView.swift in Sources */,
+				39E4F93228F1DD2A00AC0FBA /* DateFormatterExtension.swift in Sources */,
+				39D76F7128F1799A0075AB21 /* MainView.swift in Sources */,
 				3916858728F16019006101E6 /* FamilyCardApp.swift in Sources */,
+				39D76F6F28F177970075AB21 /* GenderView.swift in Sources */,
+				39D76F8528F18D5C0075AB21 /* BirthDayView.swift in Sources */,
+				39D76F8828F1C1820075AB21 /* TitleDetailView.swift in Sources */,
+				39D76F7E28F17B5C0075AB21 /* TestModel.swift in Sources */,
+				39D76F7C28F17B560075AB21 /* TestManager.swift in Sources */,
 				3916859328F1601B006101E6 /* FamilyCard.xcdatamodeld in Sources */,
+				39D76F8A28F1C7EF0075AB21 /* BloodTypeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +377,7 @@
 				DEVELOPMENT_TEAM = PQ5FS4VVLR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FamilyCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -307,6 +407,7 @@
 				DEVELOPMENT_TEAM = PQ5FS4VVLR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FamilyCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
