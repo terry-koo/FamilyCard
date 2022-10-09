@@ -20,8 +20,9 @@ struct GenderView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("성별을 선택해주세요")
-                .font(.system(size: 28))
-                .padding(.vertical, 40)
+                .font(.system(size: 28, weight: .bold))
+                .padding(EdgeInsets(top: UIScreen.getHeight(22), leading: 0, bottom: UIScreen.getHeight(44), trailing: 0))
+            
             HStack {
                 BadgeView(text: "남성",width: 88, height: 46, bindingGender: $gender)
                     .onTapGesture {
@@ -32,22 +33,20 @@ struct GenderView: View {
                         gender = "여성"
                     }
             }
-            .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(66), trailing: 0))
+            
             Text("이름")
+                .foregroundColor(Color("DisableText"))
             TextField("이름", text: $name)
                 .focused($focusedField, equals: .field)
             if focusedField == .field {
-                Divider()
-                    .frame(height: 1)
-                    .background(Color.blue)
+                ActiveDividerView()
             } else {
-                Divider()
-                    .frame(height: 1)
-                    .background(Color.gray)
+                DisableDividerView()
             }
             Spacer()
         }
-        .padding(.horizontal, 30)
+        .padding(.horizontal, 16)
         
         ZStack {
             Spacer()
@@ -58,14 +57,13 @@ struct GenderView: View {
                         page += 1
                     }, label: {
                         ConfirmView(text: "다음")
-                            
                     })
                 }
             }
         }
-        .padding(.horizontal, UIScreen.getWidth(16))
+        .padding(.horizontal, 16)
     }
-} 
+}
 //
 //struct GenderView_Previews: PreviewProvider {
 //    static var previews: some View {

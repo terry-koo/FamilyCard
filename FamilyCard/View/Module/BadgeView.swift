@@ -13,34 +13,30 @@ struct BadgeView: View {
     var height: CGFloat
     @Binding var bindingGender: String
     
-//    init(text: String, state: Binding<Bool>, bind){
-//        self.text = text
-//        self._state = state
-//    }
     
     var body: some View {
         if text == bindingGender {
             ZStack {
                 RoundedRectangle(cornerRadius: 30)
                     .frame(width: width, height: height)
-                    .foregroundColor(.blue)
+                    .foregroundColor(Color("ActiveColor1"))
                 Text(text)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("ActiveColor2"))
             }
         } else {
             ZStack {
                 RoundedRectangle(cornerRadius: 30)
                     .frame(width: width, height: height)
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color("DisableCapsule"))
                 Text(text)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("DisableText"))
             }
         }
      }
 }
 
-//struct BadgeView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BadgeView(text: "남성", state: .constant(false))
-//    }
-//}
+struct BadgeView_Previews: PreviewProvider {
+    static var previews: some View {
+        BadgeView(text: "남성", width: 50, height: 30, bindingGender: .constant("남성"))
+    }
+}

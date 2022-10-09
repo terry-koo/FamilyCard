@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NameView: View {
     enum FocusField: Hashable {
-      case field
+        case field
     }
     
     @Binding var page: Int
@@ -19,8 +19,8 @@ struct NameView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("이름을 입력해주세요")
-                .font(.system(size: 28))
-                .padding(.vertical, 40)
+                .font(.system(size: 28, weight: .bold))
+                .padding(EdgeInsets(top: UIScreen.getHeight(44), leading: 0, bottom: UIScreen.getHeight(44), trailing: 0))
             HStack {
                 TextField("이름", text: $name)
                     .focused($focusedField, equals: .field)
@@ -28,22 +28,18 @@ struct NameView: View {
                     .onAppear {
                         self.focusedField = .field
                     }
-//                if !name.isEmpty {
-                    Button(action: {
-                        name = ""
-                    }, label: {
-                        Image(systemName: "x.circle.fill")
-                            .foregroundColor(.gray)
-                            .opacity(name.isEmpty ? 0 : 1)
-                    })
-//                }
+                Button(action: {
+                    name = ""
+                }, label: {
+                    Image(systemName: "x.circle.fill")
+                        .foregroundColor(Color("GrayScale1"))
+                        .opacity(name.isEmpty ? 0 : 1)
+                })
             }
-            Divider()
-                .frame(height: 1)
-                .background(Color.blue)
+            ActiveDividerView()
             Spacer()
         }
-        .padding(.horizontal, 30)
+        .padding(.horizontal, UIScreen.getWidth(16))
         
         // 다음 버튼
         VStack {
@@ -54,16 +50,17 @@ struct NameView: View {
                     Text("다음")
                         .padding(10)
                         .frame(width: UIScreen.main.bounds.size.width, height: 60)
-                        .foregroundColor(.white)
-                        .background(.blue)
+                        .foregroundColor(Color("ActiveColor2"))
+                        .background(Color("ActiveColor1"))
                 })
             }
         }
     }
 }
 
+//
 //struct NameView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        NameView(page: .constant(1)) 
+//        NameView(page: .constant(1),name: .constant("륑다"))
 //    }
 //}

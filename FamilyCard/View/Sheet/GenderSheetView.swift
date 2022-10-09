@@ -30,13 +30,11 @@ struct GenderSheetView: View {
                         .opacity(person.gender == "남성" ? 1 : 0)
                 }
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(16), trailing: 0))
-                .foregroundColor(.black)
+                .foregroundColor(Color("ActiveColor1"))
             })
             
             
-            Divider()
-                .frame(height: 1)
-                .foregroundColor(.gray)
+            DisableDividerView()
             
             Button(action: {
                 print("여성")
@@ -49,7 +47,7 @@ struct GenderSheetView: View {
                         .opacity(person.gender == "여성" ? 1 : 0)
                 }
                 .padding(EdgeInsets(top: UIScreen.getHeight(16), leading: 0, bottom: 0, trailing: 0))
-                .foregroundColor(.black)
+                .foregroundColor(Color("ActiveColor1"))
             })
             
             Spacer()

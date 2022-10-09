@@ -47,7 +47,7 @@ struct MyPageView: View {
                     }
                     Spacer()
                     // TODO: - 배지 구현 필요
-                    Text("나")
+                    CapsuleBadgeView(who: "어머니")
                 }
                 .frame(height: UIScreen.getHeight(45))
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(44), trailing: 0))

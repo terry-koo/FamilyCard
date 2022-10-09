@@ -29,13 +29,11 @@ struct RhSheetView: View {
                         .opacity(person.blood == "RH+" ? 1 : 0)
                 }
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(16), trailing: 0))
-                .foregroundColor(.black)
+                .foregroundColor(Color("ActiveColor1"))
             })
             
             
-            Divider()
-                .frame(height: 1)
-                .foregroundColor(.gray)
+            DisableDividerView()
             
             Button(action: {
                 print("RH-")
@@ -48,12 +46,10 @@ struct RhSheetView: View {
                         .opacity(person.blood == "RH-" ? 1 : 0)
                 }
                 .padding(EdgeInsets(top: UIScreen.getHeight(16), leading: 0, bottom: UIScreen.getHeight(16), trailing: 0))
-                .foregroundColor(.black)
+                .foregroundColor(Color("ActiveColor1"))
             })
             
-            Divider()
-                .frame(height: 1)
-                .foregroundColor(.gray)
+            DisableDividerView()
             
             Button(action: {
                 print("모름")
@@ -66,7 +62,7 @@ struct RhSheetView: View {
                         .opacity(person.blood == "모름" ? 1 : 0)
                 }
                 .padding(EdgeInsets(top: UIScreen.getHeight(16), leading: 0, bottom: UIScreen.getHeight(16), trailing: 0))
-                .foregroundColor(.black)
+                .foregroundColor(Color("ActiveColor1"))
             })
             
             Spacer()

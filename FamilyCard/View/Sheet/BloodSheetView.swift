@@ -29,13 +29,11 @@ struct BloodSheetView: View {
                         .opacity(person.blood == "A형" ? 1 : 0)
                 }
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(16), trailing: 0))
-                .foregroundColor(.black)
+                .foregroundColor(Color("ActiveColor1"))
             })
             
             
-            Divider()
-                .frame(height: 1)
-                .foregroundColor(.gray)
+            DisableDividerView()
             
             Button(action: {
                 print("B형")
@@ -48,12 +46,10 @@ struct BloodSheetView: View {
                         .opacity(person.blood == "B형" ? 1 : 0)
                 }
                 .padding(EdgeInsets(top: UIScreen.getHeight(16), leading: 0, bottom: UIScreen.getHeight(16), trailing: 0))
-                .foregroundColor(.black)
+                .foregroundColor(Color("ActiveColor1"))
             })
             
-            Divider()
-                .frame(height: 1)
-                .foregroundColor(.gray)
+            DisableDividerView()
             
             Button(action: {
                 print("O형")
@@ -66,12 +62,10 @@ struct BloodSheetView: View {
                         .opacity(person.blood == "O형" ? 1 : 0)
                 }
                 .padding(EdgeInsets(top: UIScreen.getHeight(16), leading: 0, bottom: UIScreen.getHeight(16), trailing: 0))
-                .foregroundColor(.black)
+                .foregroundColor(Color("ActiveColor1"))
             })
             
-            Divider()
-                .frame(height: 1)
-                .foregroundColor(.gray)
+            DisableDividerView()
             
             Button(action: {
                 print("AB형")
@@ -84,7 +78,7 @@ struct BloodSheetView: View {
                         .opacity(person.blood == "AB형" ? 1 : 0)
                 }
                 .padding(EdgeInsets(top: UIScreen.getHeight(16), leading: 0, bottom: 0, trailing: 0))
-                .foregroundColor(.black)
+                .foregroundColor(Color("ActiveColor1"))
             })
             
             Spacer()

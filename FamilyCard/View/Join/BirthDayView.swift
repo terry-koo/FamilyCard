@@ -22,8 +22,8 @@ struct BirthDayView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("생일을 입력해주세요")
-                .font(.system(size: 28))
-                .padding(.vertical, 40)
+                .font(.system(size: 28, weight: .bold))
+                .padding(EdgeInsets(top: UIScreen.getHeight(22), leading: 0, bottom: UIScreen.getHeight(44), trailing: 0))
             
             DatePicker("Please enter a date", selection: $date,
                        displayedComponents: .date)
@@ -34,40 +34,53 @@ struct BirthDayView: View {
             .onChange(of: date, perform: { _ in
                 selected += 1
             })
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(22), trailing: 0))
             
             if selected == 0 {
                 Text("생일을 선택해주세요")
-                    .foregroundColor(.gray)
-                Divider()
-                    .frame(height: 1)
-                    .background(Color.gray)
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 40, trailing: 0))
+                    .foregroundColor(Color("DisableText"))
+                    .font(.system(size: 22))
+                DisableDividerView()
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 66, trailing: 0))
             } else {
-                Text("\(date, formatter: DateFormatter.customFormatter)")
-                    .foregroundColor(.black)
-                Divider()
-                    .frame(height: 1)
-                    .background(Color.blue)
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 40, trailing: 0))
+                Text(date.toCustomBirthDayFormat())
+                    .foregroundColor(Color("ActiveColor1"))
+                    .font(.system(size: 22))
+                ActiveDividerView()
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 66, trailing: 0))
             }
             
             TitleDetailView(title: "성별", detail: gender)
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 40, trailing: 0))
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 32, trailing: 0))
             TitleDetailView(title: "이름", detail: name)
                
             Spacer()
         }
-        .padding(.horizontal, 16)
+        .padding(.horizontal, 30)
         if selected > 0 {
             VStack {
                 Button(action: {
                     page += 1
                 }, label: {
                     ConfirmView(text: "다음")
-                        .padding(.horizontal, UIScreen.getWidth(16))
                 })
             }
+            .padding(.horizontal, 16)
         }
+        
+//        ZStack {
+//            Spacer()
+//            // 버튼
+//            if selected > 0 {
+//                VStack {
+//                    ConfirmView(text: "다음")
+//                        .onTapGesture {
+//                            print("다음")
+//                            page += 1
+//                        }
+//                }
+//            }
+//        }
     }
 }
 

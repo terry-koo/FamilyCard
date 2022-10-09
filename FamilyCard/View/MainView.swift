@@ -23,7 +23,7 @@ struct MainView: View {
         VStack {
             HStack {
                 Image(systemName: "chevron.left")
-                    .foregroundColor(.blue)
+                    .foregroundColor(Color("ActiveColor1"))
                     .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 0))
                     .onTapGesture {
                         if page > 0 {

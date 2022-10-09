@@ -14,14 +14,15 @@ struct BloodTypeView: View {
     @Binding var blood: String
     @Binding var rh: String
     @Binding var date: Date
-//    @Binding var isFirstLaunching: Bool
+    // MARK: - 처음 앱 구동 분기 처리
+    //    @Binding var isFirstLaunching: Bool
     @State var sheet: Bool = false
     
     var body: some View {
         VStack(alignment: .leading) {
             Text("혈액형을 선택해주세요")
-                .font(.system(size: 28))
-                .padding(.vertical, 40)
+                .font(.system(size: 28, weight: .bold))
+                .padding(EdgeInsets(top: UIScreen.getHeight(22), leading: 0, bottom: UIScreen.getHeight(44), trailing: 0))
             HStack{
                 VStack {
                     HStack {
@@ -29,23 +30,22 @@ struct BloodTypeView: View {
                             Text("RH식")
                         } else {
                             Text(rh)
-                                .foregroundColor(.black)
+                                .foregroundColor(Color("ActiveColor1"))
                         }
-                        Spacer()
                         Image(systemName: "chevron.right")
+                        Spacer()
                     }
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color("GrayScale1"))
                     .onTapGesture {
                         sheet.toggle()
                     }
                     // TODO: - Divider 크기 조절 필요
-                    Divider()
-                        .frame(height: 1)
-                        .background(Color.black)
+                    ActiveDividerView()
                 }
                 .frame(width: UIScreen.getWidth(70))
-
-                    Spacer()
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(22), trailing: 0))
+                
+                Spacer()
             }
             HStack {
                 BadgeView(text: "A형", width: 78, height: 46, bindingGender: $blood)
@@ -65,54 +65,21 @@ struct BloodTypeView: View {
                         blood = "AB형"
                     }
             }
-            .padding(EdgeInsets(top: 0, leading: 0, bottom: 20, trailing: 0))
-
-            TitleDetailView(title: "생일", detail: DateFormatter.customFormatter.string(for: date) ?? "")
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 40, trailing: 0))
-            TitleDetailView(title: "성별", detail: gender)
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 40, trailing: 0))
-            TitleDetailView(title: "이름", detail: name)
- 
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(66), trailing: 0))
             
+            Group {
+                TitleDetailView(title: "생일", detail: DateFormatter.customFormatter.string(for: date) ?? "")
+                TitleDetailView(title: "성별", detail: gender)
+                TitleDetailView(title: "이름", detail: name)
+            }
+            .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(32), trailing: 0))
             Spacer()
         }
-        .padding(.horizontal, UIScreen.getWidth(16))
+        .padding(.horizontal, 30)
         .sheet(isPresented: $sheet, content: {
-            VStack(alignment: .leading){
-                Text("RH식 혈액형을 선택해주세요")
-                    .font(.system(size: 20))
-                    .padding(.vertical, 20)
-                Button(action: {
-                    rh = "RH+"
-                    sheet.toggle()
-                }, label: {
-                    Text("RH+")
-                        .foregroundColor(.black)
-                        .padding(.vertical, 10)
-                })
-                Button(action: {
-                    rh = "RH-"
-                    sheet.toggle()
-                }, label: {
-                    Text("RH-")
-                        .foregroundColor(.black)
-                        .padding(.vertical, 10)
-                })
-                Button(action: {
-                    rh = "모름"
-                    sheet.toggle()
-                }, label: {
-                    Text("모름")
-                        .foregroundColor(.black)
-                        .padding(.vertical, 10)
-                })
-                Spacer()
-                HStack{
-                    Spacer()
-                }
-            }
-            .padding(.horizontal, UIScreen.getWidth(16))
-            .presentationDetents([.medium])
+            bloodSheet()
+                .padding(.horizontal, 16)
+                .presentationDetents([.medium])
         })
         
         ZStack {
@@ -122,19 +89,57 @@ struct BloodTypeView: View {
                 VStack {
                     Button(action: {
                         page += 1
-//                        isFirstLaunching.toggle()
+                        // MARK: - 앱 처음 구동 분기 처리
+                        //isFirstLaunching.toggle()
                     }, label: {
                         ConfirmView(text: "완료")
                     })
                 }
+                .padding(.horizontal, 16)
             }
         }
-        .padding(.horizontal, UIScreen.getWidth(16))
+    }
+    
+    @ViewBuilder
+    func bloodSheet() -> some View {
+        VStack(alignment: .leading){
+            Text("RH식 혈액형을 선택해주세요")
+                .font(.system(size: 20))
+                .padding(.vertical, 20)
+            Button(action: {
+                rh = "RH+"
+                sheet.toggle()
+            }, label: {
+                Text("RH+")
+                    .foregroundColor(Color("ActiveColor1"))
+                    .padding(.vertical, 10)
+            })
+            Button(action: {
+                rh = "RH-"
+                sheet.toggle()
+            }, label: {
+                Text("RH-")
+                    .foregroundColor(Color("ActiveColor1"))
+                    .padding(.vertical, 10)
+            })
+            Button(action: {
+                rh = "모름"
+                sheet.toggle()
+            }, label: {
+                Text("모름")
+                    .foregroundColor(Color("ActiveColor1"))
+                    .padding(.vertical, 10)
+            })
+            Spacer()
+            HStack {
+                Spacer()
+            }
+        }
     }
 }
 
-struct BloodTypeView_Previews: PreviewProvider {
-    static var previews: some View {
-        BloodTypeView(page: .constant(3), gender: .constant("남성"), name: .constant("륑다"), blood: .constant("A형"), rh: .constant("RH+"), date: .constant(Date()))
-    }
-}
+//struct BloodTypeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BloodTypeView(page: .constant(3), gender: .constant("남성"), name: .constant("륑다"), blood: .constant("A형"), rh: .constant("RH+"), date: .constant(Date()), isFirstLaunching: .constant(true))
+//    }
+//}
