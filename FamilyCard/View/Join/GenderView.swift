@@ -58,10 +58,12 @@ struct GenderView: View {
                         page += 1
                     }, label: {
                         ConfirmView(text: "다음")
+                            
                     })
                 }
             }
         }
+        .padding(.horizontal, UIScreen.getWidth(16))
     }
 } 
 //

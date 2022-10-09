@@ -57,30 +57,17 @@ struct BirthDayView: View {
                
             Spacer()
         }
-        .padding(.horizontal, 30)
+        .padding(.horizontal, 16)
         if selected > 0 {
             VStack {
                 Button(action: {
                     page += 1
                 }, label: {
                     ConfirmView(text: "다음")
+                        .padding(.horizontal, UIScreen.getWidth(16))
                 })
             }
         }
-        
-//        ZStack {
-//            Spacer()
-//            // 버튼
-//            if selected > 0 {
-//                VStack {
-//                    ConfirmView(text: "다음")
-//                        .onTapGesture {
-//                            print("다음")
-//                            page += 1
-//                        }
-//                }
-//            }
-//        }
     }
 }
 

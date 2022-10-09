@@ -31,8 +31,8 @@ struct BloodTypeView: View {
                             Text(rh)
                                 .foregroundColor(.black)
                         }
-                        Image(systemName: "chevron.right")
                         Spacer()
+                        Image(systemName: "chevron.right")
                     }
                     .foregroundColor(.gray)
                     .onTapGesture {
@@ -43,7 +43,9 @@ struct BloodTypeView: View {
                         .frame(height: 1)
                         .background(Color.black)
                 }
-                Spacer()
+                .frame(width: UIScreen.getWidth(70))
+
+                    Spacer()
             }
             HStack {
                 BadgeView(text: "A형", width: 78, height: 46, bindingGender: $blood)
@@ -74,7 +76,7 @@ struct BloodTypeView: View {
             
             Spacer()
         }
-        .padding(.horizontal, 30)
+        .padding(.horizontal, UIScreen.getWidth(16))
         .sheet(isPresented: $sheet, content: {
             VStack(alignment: .leading){
                 Text("RH식 혈액형을 선택해주세요")
@@ -109,7 +111,7 @@ struct BloodTypeView: View {
                     Spacer()
                 }
             }
-            .padding(20)
+            .padding(.horizontal, UIScreen.getWidth(16))
             .presentationDetents([.medium])
         })
         
@@ -127,6 +129,7 @@ struct BloodTypeView: View {
                 }
             }
         }
+        .padding(.horizontal, UIScreen.getWidth(16))
     }
 }
 
