@@ -10,14 +10,26 @@ import SwiftUI
 struct TitleDetailView: View {
     var title: String
     var detail: String
+    var option: String?
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(title)
-                .font(.system(size: 17, weight: .semibold))
-                .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
-            Text(detail)
-                .font(.system(size: 22, weight: .regular))
+            HStack {
+                Text(title)
+                    .font(.system(size: 17, weight: .semibold))
+                    .foregroundColor(.gray)
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: UIScreen.getHeight(10), trailing: 0))
+                Spacer()
+            }
+            HStack {
+                Text(detail)
+                    .font(.system(size: 22, weight: .regular))
+                if let option = option {
+                    Text(option)
+                        .font(.system(size: 22, weight: .regular))
+                        .padding(EdgeInsets(top: 0, leading: UIScreen.getWidth(22), bottom: 0, trailing: 0))
+                }
+            }
         }
     }
 }

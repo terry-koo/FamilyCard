@@ -13,10 +13,11 @@ struct ConfirmView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
-                .frame(width: UIScreen.main.bounds.size.width * 0.9, height: 60)
-                .foregroundColor(.blue)
+                .frame(height: UIScreen.getHeight(60))
+                .foregroundColor(.black)
             Text(text)
-                .foregroundColor(.white)
+                .font(.system(size: 22))
+                .foregroundColor(.yellow)
         }
         
     }

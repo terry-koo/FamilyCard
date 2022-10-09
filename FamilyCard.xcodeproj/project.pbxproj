@@ -16,7 +16,6 @@
 		3916859B28F1679C006101E6 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3916859A28F1679C006101E6 /* NameView.swift */; };
 		39D76F6F28F177970075AB21 /* GenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F6E28F177970075AB21 /* GenderView.swift */; };
 		39D76F7128F1799A0075AB21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7028F1799A0075AB21 /* MainView.swift */; };
-		39D76F7A28F17B510075AB21 /* TestExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7928F17B510075AB21 /* TestExtenstion.swift */; };
 		39D76F7C28F17B560075AB21 /* TestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7B28F17B560075AB21 /* TestManager.swift */; };
 		39D76F7E28F17B5C0075AB21 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F7D28F17B5C0075AB21 /* TestModel.swift */; };
 		39D76F8128F17CA90075AB21 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8028F17CA90075AB21 /* BadgeView.swift */; };
@@ -25,6 +24,13 @@
 		39D76F8828F1C1820075AB21 /* TitleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8728F1C1820075AB21 /* TitleDetailView.swift */; };
 		39D76F8A28F1C7EF0075AB21 /* BloodTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */; };
 		39E4F93228F1DD2A00AC0FBA /* DateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F93128F1DD2A00AC0FBA /* DateFormatterExtension.swift */; };
+		39E4F93728F2725400AC0FBA /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F93628F2725400AC0FBA /* MyPageView.swift */; };
+		39E4F93928F283D800AC0FBA /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F93828F283D800AC0FBA /* Human.swift */; };
+		39E4F93B28F2865900AC0FBA /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F93A28F2865900AC0FBA /* UIScreenExtension.swift */; };
+		39E4F93F28F28A7F00AC0FBA /* DateExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F93E28F28A7F00AC0FBA /* DateExtenstion.swift */; };
+		39E4F94128F28D2400AC0FBA /* ModifiableTitleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F94028F28D2400AC0FBA /* ModifiableTitleDetailView.swift */; };
+		39E4F94428F29EB900AC0FBA /* GenderSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F94328F29EB900AC0FBA /* GenderSheetView.swift */; };
+		39E4F94628F2A48600AC0FBA /* BirthSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F94528F2A48600AC0FBA /* BirthSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +44,6 @@
 		3916859A28F1679C006101E6 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		39D76F6E28F177970075AB21 /* GenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderView.swift; sourceTree = "<group>"; };
 		39D76F7028F1799A0075AB21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		39D76F7928F17B510075AB21 /* TestExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtenstion.swift; sourceTree = "<group>"; };
 		39D76F7B28F17B560075AB21 /* TestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestManager.swift; sourceTree = "<group>"; };
 		39D76F7D28F17B5C0075AB21 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		39D76F8028F17CA90075AB21 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
@@ -48,6 +53,13 @@
 		39D76F8728F1C1820075AB21 /* TitleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleDetailView.swift; sourceTree = "<group>"; };
 		39D76F8928F1C7EF0075AB21 /* BloodTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodTypeView.swift; sourceTree = "<group>"; };
 		39E4F93128F1DD2A00AC0FBA /* DateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtension.swift; sourceTree = "<group>"; };
+		39E4F93628F2725400AC0FBA /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		39E4F93828F283D800AC0FBA /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		39E4F93A28F2865900AC0FBA /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
+		39E4F93E28F28A7F00AC0FBA /* DateExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtenstion.swift; sourceTree = "<group>"; };
+		39E4F94028F28D2400AC0FBA /* ModifiableTitleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifiableTitleDetailView.swift; sourceTree = "<group>"; };
+		39E4F94328F29EB900AC0FBA /* GenderSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSheetView.swift; sourceTree = "<group>"; };
+		39E4F94528F2A48600AC0FBA /* BirthSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,8 @@
 		39D76F7228F17B130075AB21 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				39E4F94228F29EAF00AC0FBA /* Sheet */,
+				39E4F93328F2722A00AC0FBA /* MyPage */,
 				39D76F7028F1799A0075AB21 /* MainView.swift */,
 				39D76F7F28F17C7A0075AB21 /* Module */,
 				3916859928F164EE006101E6 /* Onboarding */,
@@ -128,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				39D76F7D28F17B5C0075AB21 /* TestModel.swift */,
+				39E4F93828F283D800AC0FBA /* Human.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,8 +158,9 @@
 		39D76F7528F17B290075AB21 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				39D76F7928F17B510075AB21 /* TestExtenstion.swift */,
 				39E4F93128F1DD2A00AC0FBA /* DateFormatterExtension.swift */,
+				39E4F93A28F2865900AC0FBA /* UIScreenExtension.swift */,
+				39E4F93E28F28A7F00AC0FBA /* DateExtenstion.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -155,8 +171,26 @@
 				39D76F8028F17CA90075AB21 /* BadgeView.swift */,
 				39D76F8228F18B170075AB21 /* ConfirmView.swift */,
 				39D76F8728F1C1820075AB21 /* TitleDetailView.swift */,
+				39E4F94028F28D2400AC0FBA /* ModifiableTitleDetailView.swift */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		39E4F93328F2722A00AC0FBA /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				39E4F93628F2725400AC0FBA /* MyPageView.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		39E4F94228F29EAF00AC0FBA /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				39E4F94328F29EB900AC0FBA /* GenderSheetView.swift */,
+				39E4F94528F2A48600AC0FBA /* BirthSheetView.swift */,
+			);
+			path = Sheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E4F93F28F28A7F00AC0FBA /* DateExtenstion.swift in Sources */,
 				39D76F8128F17CA90075AB21 /* BadgeView.swift in Sources */,
-				39D76F7A28F17B510075AB21 /* TestExtenstion.swift in Sources */,
+				39E4F94428F29EB900AC0FBA /* GenderSheetView.swift in Sources */,
 				3916859028F1601B006101E6 /* Persistence.swift in Sources */,
 				3916858928F16019006101E6 /* ContentView.swift in Sources */,
 				3916859B28F1679C006101E6 /* NameView.swift in Sources */,
@@ -239,13 +274,18 @@
 				39E4F93228F1DD2A00AC0FBA /* DateFormatterExtension.swift in Sources */,
 				39D76F7128F1799A0075AB21 /* MainView.swift in Sources */,
 				3916858728F16019006101E6 /* FamilyCardApp.swift in Sources */,
+				39E4F93728F2725400AC0FBA /* MyPageView.swift in Sources */,
 				39D76F6F28F177970075AB21 /* GenderView.swift in Sources */,
+				39E4F94628F2A48600AC0FBA /* BirthSheetView.swift in Sources */,
 				39D76F8528F18D5C0075AB21 /* BirthDayView.swift in Sources */,
 				39D76F8828F1C1820075AB21 /* TitleDetailView.swift in Sources */,
+				39E4F93928F283D800AC0FBA /* Human.swift in Sources */,
 				39D76F7E28F17B5C0075AB21 /* TestModel.swift in Sources */,
 				39D76F7C28F17B560075AB21 /* TestManager.swift in Sources */,
 				3916859328F1601B006101E6 /* FamilyCard.xcdatamodeld in Sources */,
 				39D76F8A28F1C7EF0075AB21 /* BloodTypeView.swift in Sources */,
+				39E4F94128F28D2400AC0FBA /* ModifiableTitleDetailView.swift in Sources */,
+				39E4F93B28F2865900AC0FBA /* UIScreenExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
