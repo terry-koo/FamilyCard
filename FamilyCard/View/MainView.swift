@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
-    @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
+    // MARK: - 처음 접속 분기 처리
+    //    @AppStorage("_isFirstLaunching") var isFirstLaunching: Bool = true
     
     @State var page: Int = 0
     @State var name: String = ""
@@ -34,20 +35,26 @@ struct MainView: View {
                     .opacity(page > 0 ? 1 : 0)
                 Spacer()
             }
-            if isFirstLaunching == true {
+//            if isFirstLaunching == true {
                 switch page {
                 case 0:
                     NameView(page: $page, name: $name)
+                        .transition(AnyTransition.scale.animation(.easeInOut))
                 case 1:
                     GenderView(page: $page,name: $name, gender: $gender)
+                        .transition(AnyTransition.scale.animation(.easeInOut))
                 case 2:
                     BirthDayView(page: $page, gender: $gender, name: $name, date: $date, selected: $selected)
+                        .transition(AnyTransition.scale.animation(.easeInOut))
                 case 3:
-                    BloodTypeView(page: $page, gender: $gender, name: $name, blood: $blood, rh: $rh, date: $date, isFirstLaunching: $isFirstLaunching)
+                    // MARK: - 처음 접속 분기 처리
+//                    BloodTypeView(page: $page, gender: $gender, name: $name, blood: $blood, rh: $rh, date: $date, isFirstLaunching: $isFirstLaunching)
+                    BloodTypeView(page: $page, gender: $gender, name: $name, blood: $blood, rh: $rh, date: $date)
+                        .transition(AnyTransition.scale.animation(.easeInOut))
                 default:
                     EmptyView()
                 }
-            }
+//            }
         }
     }
 }
